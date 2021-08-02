@@ -42,7 +42,7 @@ export default class CreateUser extends Component {
       email: this.state.email,
       phone: this.state.phone
     };
-    axios.post('http://localhost:4000/students/create-student', userObject)
+    axios.post('http://localhost:4000/users/create-user', userObject)
       .then(res => console.log(res.data));
 
     this.setState({ name: '', email: '', phone: '' })
