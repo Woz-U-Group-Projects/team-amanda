@@ -11,7 +11,7 @@ export default class CreateUser extends Component {
     // Setting up functions
     this.onChangeUserName = this.onChangeUserName.bind(this);
     this.onChangeUserEmail = this.onChangeUserEmail.bind(this);
-    this.onChangeUserRollno = this.onChangeUserRollno.bind(this);
+    this.onChangeUserPhone = this.onChangeUserPhone.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
 
     // Setting up state
