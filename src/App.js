@@ -34,7 +34,7 @@ function App() {
               </Nav>
 
               {/* <Nav>
-                <Link to={"/edit-student/:id"} className="nav-link">
+                <Link to={"/edit-user/:id"} className="nav-link">
                   Edit User
                 </Link>
               </Nav> */}
