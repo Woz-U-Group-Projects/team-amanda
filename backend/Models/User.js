@@ -8,7 +8,7 @@ let userSchema = new Schema({
   email: {
     type: String
   },
-  rollno: {
+  phone: {
     type: Number
   }
 }, {

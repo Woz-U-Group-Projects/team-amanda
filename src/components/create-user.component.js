@@ -31,7 +31,7 @@ export default class CreateUser extends Component {
   }
 
   onChangeUserPhone(e) {
-    this.setState({ rollno: e.target.value })
+    this.setState({ phone: e.target.value })
   }
 
   onSubmit(e) {
@@ -62,8 +62,8 @@ export default class CreateUser extends Component {
         </Form.Group>
 
         <Form.Group controlId="Name">
-          <Form.Label>Roll No</Form.Label>
-          <Form.Control type="text" value={this.state.phone} onChange={this.onChangeUserPhone} />
+          <Form.Label>Phone</Form.Label>
+          <Form.Control value={this.state.phone} onChange={this.onChangeUserPhone} />
         </Form.Group>
 
         <Button variant="danger" size="lg" block="block" type="submit">

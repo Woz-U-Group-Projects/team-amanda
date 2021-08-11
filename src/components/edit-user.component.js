@@ -17,12 +17,12 @@ export default class EditUser extends Component {
     this.state = {
       name: '',
       email: '',
-      rollno: ''
+      phone: ''
     }
   }
 
   componentDidMount() {
-    axios.get('http://localhost:4000/users/edit-student/' + this.props.match.params.id)
+    axios.get('http://localhost:4000/users/edit-user/' + this.props.match.params.id)
       .then(res => {
         this.setState({
           name: res.data.name,
@@ -56,7 +56,7 @@ export default class EditUser extends Component {
       phone: this.state.phone
     };
 
-    axios.put('http://localhost:4000/users/update-student/' + this.props.match.params.id, userObject)
+    axios.put('http://localhost:4000/users/update-user/' + this.props.match.params.id, userObject)
       .then((res) => {
         console.log(res.data)
         console.log('User successfully updated')
@@ -83,7 +83,7 @@ export default class EditUser extends Component {
         </Form.Group>
 
         <Form.Group controlId="Name">
-          <Form.Label>Roll No</Form.Label>
+          <Form.Label>Phone</Form.Label>
           <Form.Control type="text" value={this.state.phone} onChange={this.onChangeUserPhone} />
         </Form.Group>
 
