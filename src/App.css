@@ -1,5 +1,6 @@
 .wrapper {
   padding-top: 30px;
+ 
 }
 
 body h3 {
@@ -7,17 +8,19 @@ body h3 {
 }
 
 .navbar-brand a {
-  color: #ffffff;
+  color:azure;
 }
 
 .form-wrapper,
 .table-wrapper {
   max-width: 500px;
-  margin: 0 auto;
+ margin: 0 auto;
+  
 }
 
 .table-wrapper {
   max-width: 700px;
+ 
 }
 
 .edit-link {
@@ -25,15 +28,17 @@ body h3 {
   font-size: 0.875rem;
   line-height: normal;
   border-radius: 0.2rem;
-  color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
+  color: rgb(228, 220, 222);
+  background-color: #4027ce;
+  border-color: #3f25b4;
   margin-right: 10px;
   position: relative;
   top: 1px;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
 }
 
 .edit-link:hover {
   text-decoration: none;
-  color: #ffffff;
+  color: #18cf30;
 }
